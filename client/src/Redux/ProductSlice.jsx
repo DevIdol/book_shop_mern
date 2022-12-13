@@ -8,7 +8,7 @@ const initialState = {
 export const productFetch = createAsyncThunk(
   "products/productFetch",
   async () => {
-    const reponse = await axios.get("https://bookidol.herokuapp.com/products");
+    const reponse = await axios.get("/products");
     return reponse?.data;
   }
 );

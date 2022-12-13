@@ -10,7 +10,7 @@ import styles from "./CheckOut.module.css";
 import { Pagination, Stack } from "@mui/material";
 const CheckOut = () => {
   const cart = useSelector((state) => state.cart);
-  const [deliveryFee, setDeliveryFee] = useState(2000);
+  const [deliveryFee, ] = useState(2000);
   const [regionState, setRegionState] = useState("Select Region OR State");
   const [city, setCity] = useState("Select City");
   let [searchParams] = useSearchParams();
