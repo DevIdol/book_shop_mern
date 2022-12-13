@@ -1,5 +1,5 @@
 #Designed & Developed By DevIdol
-Using => React, Redux, Nodejs, Express, MongoDB (70% Completed)
+Used Tech => React, Redux, Nodejs, Express, MongoDB (70% Completed)
 
 https://bookidol.cyclic.app/
 
