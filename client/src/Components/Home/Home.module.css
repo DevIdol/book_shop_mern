@@ -1,0 +1,66 @@
+.home {
+  padding-top: 130px;
+  width: (100% - 300px);
+  margin-left: 300px;
+  transition: var(--transition);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 26px;
+  padding-bottom: 4px;
+}
+.header h1 {
+  font-size: 30px;
+  color: var(--font-dark);
+  font-weight: bold;
+}
+.header .viewAll {
+  font-size: 20px;
+  padding: 2px 28px;
+  background-color: var(--btn-color);
+  color: var(--font-light);
+  border-radius: 40px;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.header .viewAll:hover {
+  transition: var(--transition);
+  background-color: var(--btn-hover);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+}
+.bestSeller {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 10px;
+}
+.bestSeller::-webkit-scrollbar {
+  height: 0px;
+}
+.bestSeller:hover::-webkit-scrollbar {
+  height: 10px;
+}
+.bookList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    padding-top: 160px;
+    margin: 0;
+    width: 100%;
+  }
+  .bestSeller:hover::-webkit-scrollbar {
+    height: 4px;
+  }
+}

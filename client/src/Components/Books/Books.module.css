@@ -1,0 +1,21 @@
+.bookContainer {
+  padding-top: 130px;
+  width: (100% - 300px);
+  margin-left: 300px;
+  transition: var(--transition);
+}
+.bookList {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+@media screen and (max-width: 800px) {
+  .bookContainer {
+    padding-top: 160px;
+    margin: 0;
+    width: 100%;
+  }
+}

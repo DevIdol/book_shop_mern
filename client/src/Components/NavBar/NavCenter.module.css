@@ -1,0 +1,40 @@
+.search {
+  width: 100%;
+  border-radius: 12px !important;
+  height: 42px !important;
+  transition: var(--transition) !important;
+}
+
+@media screen and (max-width: 800px) {
+  .search {
+    height: 40px !important;
+    position: absolute;
+    width: 86%;
+    top: 54px;
+    left: 20px;
+    transition: var(--transition) !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .search {
+    width: 84%;
+  }
+}@media screen and (max-width: 600px) {
+  .search {
+    width: 82%;
+  }
+}@media screen and (max-width: 500px) {
+  .search {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .search {
+    width: 76%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .search {
+    width: 74%;
+  }
+}

@@ -1,0 +1,27 @@
+.navLeft {
+  padding-left: 20px;
+  margin-right: 120px;
+}
+.navLeft h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--font-light);
+}
+@media screen and (max-width: 1000px) {
+  .navLeft {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navLeft {
+    margin-right: 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navLeft {
+    margin: 0;
+  }
+  .navLeft h1 {
+    padding-top: 10px;
+  }
+}

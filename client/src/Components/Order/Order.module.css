@@ -1,0 +1,18 @@
+.orderPage {
+    padding-top: 130px;
+    width: (100% - 300px);
+    margin-left: 300px;
+    transition: var(--transition);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .orderPage {
+        padding-top: 160px;
+        margin: 0;
+        width: 100%;
+    }
+
+}

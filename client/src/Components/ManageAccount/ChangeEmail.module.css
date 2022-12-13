@@ -1,0 +1,84 @@
+.modelBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--font-light);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.modelInput {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  transition: var(--transition);
+}
+.modelInput:focus {
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+}
+
+.btn {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.closeBtn {
+  background-color: var(--font-light);
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--btn-color);
+  font-size: 18px;
+  transition: transform 0.5s;
+}
+.closeBtn:hover {
+  color: var(--font-light);
+  background-color: var(--btn-hover);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.submitBtn {
+  background-color: var(--font-light);
+  width: 80px;
+  height: 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  font-size: 18px;
+  transition: transform 0.5s;
+}
+.submitBtn:hover {
+  color: var(--font-light);
+  background-color: var(--primary-color);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.edit {
+  color: gray;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 500px) {
+  .edit {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .modelBox {
+    width: 92%;
+  }
+}

@@ -1,0 +1,138 @@
+.wrapper {
+  padding-top: 130px;
+  width: (100% - 300px);
+  margin-left: 300px;
+  transition: var(--transition);
+}
+.viewBook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.itemsContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.bookItems {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.productImg {
+  text-align: center;
+  width: 140px;
+  height: 100%;
+  padding: 6px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.productImg img {
+  width: 126px;
+  height: 100%;
+  border-radius: 6px;
+  transition: transform 0.4s;
+}
+.productImg img:hover {
+  transform: scale(1.05);
+}
+
+.bookDesc {
+  width: 100%;
+  padding: 4px 0px 10px 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  font-weight: bold;
+}
+.author {
+  font-style: italic;
+  font-size: 12px;
+  color: grey;
+}
+.bookBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.buyBtn {
+  height: 36px;
+  width: 46%;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: tomato;
+  color: var(--font-light);
+  transition: transform 0.4s;
+}
+.buyBtn:hover {
+  background-color: rgb(233, 48, 15);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.cartBtn {
+  height: 36px;
+  width: 96%;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--btn-color);
+  color: var(--font-light);
+  transition: transform 0.4s;
+}
+.cartBtn:hover {
+  background-color: var(--btn-hover);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+.bookDetails {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 4px 0px 4px 20px;
+}
+.bookDetails h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
+
+@media screen and (max-width: 998px) {
+  .viewBook {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .itemsContainer {
+    flex: none;
+    width: 100%;
+  }
+  .bookDetails {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding-top: 160px;
+    margin: 0;
+    width: 100%;
+  }
+}

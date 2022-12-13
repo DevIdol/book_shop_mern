@@ -1,0 +1,131 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 190px;
+  height: 460px;
+}
+.productImg {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 58%;
+  cursor: pointer;
+}
+.productImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  transition: transform 0.4s;
+}
+.productImg img:hover {
+  transform: scale(1.05);
+}
+.desc {
+  width: 100%;
+  padding: 10px 6px;
+  height: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.title {
+  color: var(--font-dark);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  transition: var(--transition);
+  cursor: pointer;
+  line-height: 1.8;
+}
+
+.title:hover {
+  font-size: 16px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.author,
+.author:hover {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-style: italic;
+  color: grey;
+  line-height: 1.8;
+}
+.price,
+.price:hover {
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
+  color: red;
+}
+
+.addCart {
+  width: 100%;
+  background-color: var(--btn-color);
+  color: var(--font-light);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  height: 36px;
+  border-radius: 20px;
+  transition: transform 0.5s;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.addCart:hover {
+  background-color: var(--btn-hover);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+@media screen and (max-width: 624px) {
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 240px;
+    gap: 6px;
+    box-shadow: 0 5px 5px -5px #333;
+    padding-bottom: 10px;
+  }
+  .productImg {
+    flex: 1;
+    height: 100%;
+  }
+  .desc {
+    flex: 2;
+    height: 100%;
+  }
+  .title,
+  .author {
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width: 484px) {
+  .productImg{
+    flex: none;
+    width: 40%;
+  }
+  .desc{
+    flex: none;
+    width: 60%;
+  }
+}

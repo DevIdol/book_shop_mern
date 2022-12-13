@@ -1,0 +1,17 @@
+.titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 0 20px;
+  margin-top: 16px;
+}
+.titleBar h1 {
+  font-size: 24px;
+  color: var(--font-light);
+  padding-top: 4px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+}

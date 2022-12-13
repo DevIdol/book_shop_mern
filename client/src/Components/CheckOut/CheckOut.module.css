@@ -1,0 +1,140 @@
+.checkOutPage {
+  padding-top: 130px;
+  width: (100% - 300px);
+  margin-left: 300px;
+  transition: var(--transition);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+}
+.formContainer {
+  padding-bottom: 60px;
+}
+
+.checkOutForm {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.checkOutForm input,
+.checkOutForm select {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 0 20px;
+  width: 50%;
+  height: 48px;
+  font-size: 18px;
+  transition: var(--transition);
+}
+.checkOutForm input:focus,
+.checkOutForm select:focus {
+  border: 2px solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.placeOrder {
+  background-color: var(--font-light);
+  padding: 12px;
+  box-shadow: 0 -5px 5px -5px #333;
+  position: fixed;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: inherit;
+}
+.placeOrder button {
+  border-radius: 6px;
+  color: var(--font-light);
+  border: none;
+  width: 100px;
+  height: 32px;
+  font-size: 16px;
+  background-color: var(--btn-color);
+}
+.placeOrder button:hover {
+  background-color: var(--btn-hover);
+}
+.order {
+  padding-top: 2px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid silver;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.productImg {
+  width: 80px;
+  height: 100px;
+  padding: 4px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productImg img {
+  width: 72px;
+  height: 92px;
+  border-radius: 6px;
+  transition: transform 0.4s;
+}
+.productImg img:hover {
+  transform: scale(1.05);
+}
+.productDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.title,
+.price,
+.qty {
+  color: var(--font-dark);
+}
+.title:hover,
+.price:hover,
+.qty:hover {
+  color: var(--primary-color);
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .checkOutForm input,
+  .checkOutForm select {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .checkOutPage {
+    padding-top: 160px;
+    margin: 0;
+    width: 100%;
+  }
+  .formContainer {
+    padding-top: 20px;
+  }
+  .placeOrder {
+    left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .checkOutForm input,
+  .checkOutForm select {
+    width: 94%;
+  }
+}

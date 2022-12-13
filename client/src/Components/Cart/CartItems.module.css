@@ -1,0 +1,143 @@
+.cartItems {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.productImg {
+  text-align: center;
+  width: 140px;
+  padding: 6px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 58%;
+  cursor: pointer;
+}
+.productImg img {
+  width: 126px;
+  border-radius: 6px;
+  transition: transform 0.4s;
+}
+.productImg img:hover {
+  transform: scale(1.05);
+}
+.cartDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.title {
+  color: var(--font-dark);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.title:hover {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+.author,
+.author:hover {
+  line-height: 1.6;
+  color: grey;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+}
+.price,
+.price:hover {
+  font-size: 16px;
+  color: var(--font-dark);
+  font-weight: bold;
+}
+.decrease,
+.increase {
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid transparent;
+  background-color: #ccc;
+  font-weight: 500;
+  padding: 2px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.quantity {
+  font-size: 18px;
+  padding: 0 10px;
+  font-weight: bold;
+}
+.clear {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 20px;
+}
+.clearCart {
+  padding: 4px 20px;
+  background-color: red;
+  border-radius: 20px;
+  color: var(--font-light);
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.5s;
+}
+.clearCart:hover {
+  background-color: rgb(219, 6, 6);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.backShop {
+ color: grey;
+ font-size: 18px;
+}
+.backShop:hover {
+  color: var(--btn-color);
+  transition: var(--transition);
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.bottom p{
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--font-dark);
+}
+.trash{
+  margin-top: 20px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+
+@media screen and (max-width: 350px) {
+  .cartItems {
+    gap: 10px;
+  }
+}

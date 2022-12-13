@@ -1,0 +1,129 @@
+.manageAccount {
+  padding-top: 130px;
+  width: (100% - 300px);
+  margin-left: 300px;
+  transition: var(--transition);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+}
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 60px;
+}
+.myProfile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.myProfile h4 {
+  padding-top: 6px;
+  padding-left: 20px;
+}
+.profilePic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.dropdownToggle,
+.dropdownToggle:hover {
+  position: absolute;
+  top: -34px;
+  left: 100px;
+  width: 68px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(204, 204, 204,0.5) !important;
+  color: var(--font-dark) !important;
+  border: 1px solid #ccc !important;
+  border-radius: 10px;
+}
+.dropdownMenu{
+  background-color: rgba(204, 204, 204,0.4) !important;
+}
+.dropdownToggle::after {
+  display: none !important;
+}
+.dropdownItem:focus {
+  background-color: var(--font-light) !important;
+  color: var(--font-dark) !important;
+}
+.info {
+  margin-top: 6px;
+  flex: 2;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 100%;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+.password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name p,
+.password p {
+  font-size: 18px;
+  color: grey;
+  align-self: flex-start;
+  align-content: flex-start;
+}
+
+.logoutBtn {
+  border: none;
+  background-color: var(--font-light);
+
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-top: 40px;
+  font-size: 18px;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  transition: var(--transition);
+
+}
+.logoutBtn:hover{
+  transition: var(--transition);
+  color: var(--font-light);
+  background-color: var(--btn-hover);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+
+@media screen and (max-width: 1120px) {
+  .profile {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .manageAccount {
+    padding-top: 160px;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .name p,
+  .password p {
+    font-size: 14px;
+  }
+}

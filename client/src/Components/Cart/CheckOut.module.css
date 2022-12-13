@@ -1,0 +1,58 @@
+.checkOut {
+  width: 240px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+.checkOut h3 {
+  padding-bottom: 10px;
+  align-self: center;
+}
+.checkOut p {
+  font-size: 18px;
+}
+.checkOutBtn {
+  align-self: center;
+  padding: 4px;
+  color: var(--font-light);
+  font-weight: bold;
+  font-size: 18px;
+  width: 80%;
+  background-color: var(--btn-color);
+  border: none;
+  transition: transform 0.5s;
+  border-radius: 20px;
+}
+.checkOutBtn:hover {
+  background-color: var(--btn-hover);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+}
+.login{
+  align-self: center;
+  background-color: var(--btn-color);
+  border: none;
+  transition: transform 0.5s;
+  border-radius: 20px;
+  padding: 4px 20px;
+  color: var(--font-light);
+  font-weight: bold;
+  font-size: 18px;
+}
+.login:hover{
+  background-color: var(--btn-hover);
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  color: var(--font-light);
+}
+
+@media screen and (max-width: 980px) {
+  .checkOut {
+    width: 100%;
+  }
+}
